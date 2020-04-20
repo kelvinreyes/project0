@@ -1,0 +1,105 @@
+$webcolor: #FE642E;
+$webcolor2: #1C1C1C;
+%clean {
+    color: $webcolor2;
+    padding-top: 40px;
+    min-height: 600px;
+    margin: 40px auto;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 90px;
+    color: $webcolor;
+}
+
+header {
+    background-color: #F2F2F2;
+    #logoimg {
+        width: 275px;
+        float: left;
+        padding: 10px;
+    }
+    #menu {
+        vertical-align: middle;
+        width: 100%;
+    }
+    ul {
+        float: right;
+    }
+    li {
+        float: left;
+        padding-left: 50px;
+        padding-top: 25px;
+        vertical-align: middle;
+        font-size: x-large;
+        font-weight: lighter;
+        list-style: none;
+    }
+    a {
+        color: $webcolor2;
+        text-decoration: none !important;
+    }
+    a:hover {
+        color: $webcolor;
+        text-decoration: none !important;
+    }
+}
+
+#welcome {
+    @extend %clean;
+    p {
+        font-size: large;
+        color: $webcolor2;
+    }
+    img {
+        width: 100%;
+    }
+    .btn {
+        background-color: $webcolor;
+    }
+}
+
+#contactbox {
+    @extend %clean;
+}
+
+#info {
+    @extend %clean;
+}
+
+.borderleft {
+    border-left: 3px $webcolor solid;
+    margin-top: 110px;
+}
+
+footer {
+    background-color: $webcolor2;
+    color: $webcolor;
+    padding: 40px;
+}
+
+@media (max-width: 990px) {
+    header li {
+        font-size: large;
+        padding-left: 15px;
+    }
+    header #logoimg {
+        width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    header li {
+        font-size: small;
+        padding-left: 15px;
+    }
+}
